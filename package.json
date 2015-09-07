@@ -1,0 +1,20 @@
+{
+  "name": "webpack-react-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build",
+    "start": "webpack-dev-server"
+  },
+  "author": "wommyt",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^1.6.1"
+  },
+  "dependencies": {
+    "webpack": "^1.12.1",
+    "webpack-dev-server": "^1.10.1"
+  }
+}
