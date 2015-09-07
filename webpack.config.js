@@ -42,7 +42,7 @@ var path = require('path');
 var node_modules = path.resolve(__dirname, 'node_modules');
 var pathToReact = path.resolve(node_modules, 'react/dist/react.min.js');
 
-config = {
+var config = {
   entry: ['webpack/hot/dev-server', path.resolve(__dirname, 'app/main.js')],
   resolve: {
   	alias: {
@@ -57,6 +57,9 @@ config = {
     loaders: [{
       test: /\.jsx?$/, // A regexp to test the require path. accepts either js or jsx
       loader: 'babel' // The module to load. "babel" is short for "babel-loader"
+    }, {
+    	test: /\.css$/, // Only .css files
+      loader: 'style!css' // Run both loaders
     }],
     noParse: [pathToReact]
   }

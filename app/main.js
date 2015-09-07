@@ -15,6 +15,8 @@
 
 //document.body.appendChild(component());
 
+import './main.css';
+
 import React from 'react';
 import Hello from './component.jsx';
 
