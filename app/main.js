@@ -1,16 +1,25 @@
-'use strict';
-var component = require('./component.js');
+// 'use strict';
+// var component = require('./component.js');
 
 // ES6
 // import MyModule from './modules/MyModule.js';
 
 // CommonJS
-var MyModule = require('./modules/MyModule.js');
+//var MyModule = require('./modules/MyModule.js');
 
-var app = document.createElement('div');
+// var app = document.createElement('div');
 
-document.body.appendChild(app);
+// document.body.appendChild(app);
 
-app.appendChild(component());
+// app.appendChild(component());
 
 //document.body.appendChild(component());
+
+import React from 'react';
+import Hello from './component.jsx';
+
+main();
+
+function main() {
+    React.render(<Hello />, document.getElementById('app'));
+}
